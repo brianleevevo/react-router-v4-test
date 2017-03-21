@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+
+#container {
+  #main-content {
+    margin-top: 54px;
+    padding: 30px;
+  }
+}

@@ -11,9 +11,8 @@ class Bundle extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.load !== this.props.load) {
+    if (nextProps.load !== this.props.load)
       this.loadComponent(nextProps);
-    }
   }
 
   loadComponent({ load }) {
@@ -27,8 +26,7 @@ class Bundle extends Component {
   }
 
   render() {
-    const { children } = this.props;
-    return children(this.state.mod);
+    return this.props.children(this.state.mod);
   }
 }
 

@@ -5,7 +5,7 @@ import { Bundle } from 'components/shared';
 
 const Home = () =>
   <Bundle load={loadHome}>
-    {mod => <mod />}
+    {Comp => <Comp />}
   </Bundle>;
 
 const AppContent = () =>

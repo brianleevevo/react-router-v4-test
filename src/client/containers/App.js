@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { routerReducer, ConnectedRouter, routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory'
 import appReducers from 'reducers';
-import { AppHeader, AppContent } from 'components/App';
+import { AppHeader, AppContent } from '../components/App';
 import './App.css';
 
 const history = createHistory();

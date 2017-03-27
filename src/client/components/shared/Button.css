@@ -1,0 +1,14 @@
+.button {
+  border-radius: 5px;
+  padding: 7px;
+  background-color: white;
+  &.button-default {
+    border: solid 1px blue;
+    color: blue;
+  }
+  &.button-primary {
+    border: solid 1px blue;
+    background-color: blue;
+    color: white;
+  }
+}

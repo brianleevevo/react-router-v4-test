@@ -6,7 +6,7 @@ const IndexView = ({
   env
 }) =>
   <DefaultLayout title={title} env={env}>
-    <div id="react-container"></div>
+    <div id="app"></div>
   </DefaultLayout>;
 
 export default IndexView;

@@ -1,4 +1,7 @@
 import { Component } from 'react'
+import Loader from './Loader';
+
+const Default = () => <div />;
 
 class Bundle extends Component {
   state = {
@@ -26,7 +29,7 @@ class Bundle extends Component {
   }
 
   render() {
-    return this.props.children(this.state.mod);
+    return this.props.children(this.state.mod ? this.state.mod : Default );
   }
 }
 

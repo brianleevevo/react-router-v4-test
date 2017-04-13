@@ -1,0 +1,14 @@
+.login-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  form {
+    #username {
+      width: 225px;
+    }
+    #password {
+      width: 225px;
+    }
+  }
+}

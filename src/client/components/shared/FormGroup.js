@@ -6,7 +6,11 @@ const FormGroup = ({
   children
 }) =>
   <div className="form-group">
-    <label htmlFor={htmlFor}>{label}</label>
+    {
+      label ?
+        <label htmlFor={htmlFor}>{label}</label>
+        : null
+    }
     <div className="form-group-inner">
       {children}
     </div>

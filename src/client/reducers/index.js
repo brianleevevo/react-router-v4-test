@@ -1,13 +1,7 @@
 import { fromJS } from 'immutable';
 import { combineReducers } from 'redux';
+import Login from './LoginReducer';
 
-const initialState = { };
-
-const reducer = (state = fromJS(initialState), action) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
-
-export default reducer;
+export default combineReducers({
+  login: Login
+});

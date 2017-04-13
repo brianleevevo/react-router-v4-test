@@ -10,10 +10,6 @@ app.engine('jsx', expressReactViews.createEngine());
 
 const server = http.createServer(app);
 
-app.get('/', (req, res) => {
-  res.render('index', { title: 'Brian', env: process.env.NODE_ENV });
-});
-
 app.get('/*', (req, res) => {
   res.render('index', { title: 'Brian', env: process.env.NODE_ENV });
 });

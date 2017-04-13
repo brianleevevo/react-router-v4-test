@@ -1,3 +1,5 @@
+import './FormGroup.css';
+
 const FormGroup = ({
   label,
   htmlFor,

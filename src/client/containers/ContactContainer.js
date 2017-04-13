@@ -12,7 +12,7 @@ const ContactContainer = () =>
     <FormGroup label="Email">
       <TextBox type="email" value="john@doe.com" placeholder="Enter Email" />
     </FormGroup>
-    <div>
+    <div className="actions">
       <Button>Cancel</Button>
       <Button type="primary">Submit</Button>
     </div>

@@ -4,4 +4,17 @@
     display: inline-block;
     margin-bottom: 5px;
   }
+
+  .form-group-info {
+    vertical-align: right;
+  }
+
+  &.form-group-error {
+    label {
+      color: red;
+    }
+    .form-control {
+      border: solid 1px red;
+    }
+  }
 }

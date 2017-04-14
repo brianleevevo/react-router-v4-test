@@ -20,12 +20,13 @@ class Bundle extends Component {
 
   loadComponent({ load }) {
     this.setState({ mod: null });
-    load(mod => {
+    load.then(mod => this.setState({ mod: mod.default }));
+    /*load(mod => {
       this.setState({
         // handle both es imports and cjs
         mod: mod.default ? mod.default : mod
       });
-    });
+    });*/
   }
 
   render() {

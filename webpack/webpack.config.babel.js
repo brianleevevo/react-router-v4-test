@@ -21,7 +21,15 @@ const webpackConfig = {
           test: /\.jsx?$/,
           exclude: /(node_modules)/,
           use: [{
-            loader: 'babel-loader'
+            loader: 'babel-loader',
+            options: {
+              presets: [
+                [ 'es2015', { modules: false } ],
+                'es2017',
+                'stage-2'
+              ],
+              plugins: [ 'syntax-dynamic-import' ]
+            }
           }]
         },
         {

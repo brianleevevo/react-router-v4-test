@@ -4,11 +4,9 @@
   display: flex;
   justify-content: center;
   form {
-    #username {
-      width: 225px;
-    }
-    #password {
-      width: 225px;
-    }
+    width: 225px;
+  }
+  .register-container {
+    margin-top: 15px;
   }
 }

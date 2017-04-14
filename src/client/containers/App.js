@@ -10,7 +10,7 @@ const history = createHistory();
 const middleware = routerMiddleware(history);
 
 const reducers = combineReducers({
-  appReducers,
+  ...appReducers,
   router: routerReducer
 });
 

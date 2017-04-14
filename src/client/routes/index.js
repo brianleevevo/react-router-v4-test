@@ -9,10 +9,11 @@ const loadBundle = load =>
     {Comp => <Comp />}
   </Bundle>;
 
-const Home = () => loadBundle(loadHome);
-const About = () => loadBundle(loadAbout);
-const Contact = () => loadBundle(loadContact);
-const Login = () => loadBundle(loadLogin);
+const Home = () => loadBundle(import('../containers/HomeContainer'));
+const About = () => loadBundle(import('../containers/AboutContainer'));
+const Contact = () => loadBundle(import('../containers/ContactContainer'));
+const Login = () => loadBundle(import('../containers/LoginContainer'));
+const Register = () => loadBundle(import('../containers/RegisterContainer'));
 
 const routes = [
   {
@@ -39,6 +40,10 @@ const routes = [
   {
     path: '/login',
     component: Login
+  },
+  {
+    path: '/register',
+    component: Register
   }
 ]
 

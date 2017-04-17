@@ -1,18 +1,18 @@
 .form-group {
   margin-bottom: 15px;
+  width: 100%;
   label {
     display: inline-block;
     margin-bottom: 5px;
   }
 
   .form-group-info {
-    vertical-align: right;
+    text-align: right;
+    font-size: 12px;
   }
 
   &.form-group-error {
-    label {
-      color: red;
-    }
+    color: red;
     .form-control {
       border: solid 1px red;
     }

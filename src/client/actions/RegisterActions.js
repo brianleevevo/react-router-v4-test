@@ -26,6 +26,8 @@ const validate = user => {
   return validation;
 };
 
+export const clear = () => ({ type: C.CLEAR });
+
 export const change = updateProp => ({ type: C.CHANGE, payload: updateProp });
 
 export const register = user => dispatch => {

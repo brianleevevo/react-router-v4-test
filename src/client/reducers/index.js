@@ -1,9 +1,2 @@
-import { fromJS } from 'immutable';
-import { combineReducers } from 'redux';
-import Login from './LoginReducer';
-import Register from './RegisterReducer';
-
-export default combineReducers({
-  login: Login,
-  register: Register
-});
+export { default as login } from './LoginReducer';
+export { default as register } from './RegisterReducer';

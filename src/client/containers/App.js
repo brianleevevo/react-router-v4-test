@@ -4,7 +4,7 @@ import { routerReducer, ConnectedRouter, routerMiddleware } from 'react-router-r
 import createHistory from 'history/createBrowserHistory'
 import thunk from 'redux-thunk';
 import * as appReducers from 'reducers';
-import { AppHeader, AppContent } from '../components/App';
+import { AppHeader, AppContent } from 'components/App';
 import './App.css';
 
 const history = createHistory();

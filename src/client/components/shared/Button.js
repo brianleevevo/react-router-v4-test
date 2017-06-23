@@ -28,7 +28,7 @@ const Button = ({
     type={htmlType}
     className={getButtonClassName(className, type, isDisabled, isLoading)}
     onClick={e => click(e)}>
-      {isLoading && loadingText ? loadingText : children}
+      {isLoading && loadingText ? `${loadingText}...` : children}
   </button>;
 
 Button.propTypes = {

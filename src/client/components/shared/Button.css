@@ -14,4 +14,7 @@
     background-color: #3897f0;
     color: white;
   }
+  &.button-loading {
+    opacity: .5;
+  }
 }

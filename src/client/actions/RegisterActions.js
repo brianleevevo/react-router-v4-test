@@ -35,5 +35,5 @@ export const register = user => dispatch => {
   if (validation.hasError)
     return dispatch({ type: C.INVALID, payload: validation });
 
-  dispatch({ type: C.SAVE_PENDING });
+  dispatch({ type: C.SAVE_REQUEST });
 };

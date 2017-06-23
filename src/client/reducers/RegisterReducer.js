@@ -33,7 +33,7 @@ export default (state = fromJS(initialState), action) => {
       return state.merge({
         validation: fromJS(action.payload)
       });
-    case C.SAVE_PENDING:
+    case C.SAVE_REQUEST:
       return state.merge({
         isSaving: true,
         validation: fromJS(initialValidationState)

@@ -3,6 +3,7 @@ import loadHome from 'bundle-loader?lazy!../containers/HomeContainer';
 import loadAbout from 'bundle-loader?lazy!../containers/AboutContainer'
 import loadContact from 'bundle-loader?lazy!../containers/ContactContainer'
 import loadLogin from 'bundle-loader?lazy!../containers/LoginContainer';
+import withAuth from 'components/shared/WithAuth';
 
 const loadBundle = load =>
   <Bundle load={load}>
@@ -25,17 +26,17 @@ const routes = [
     path: '/about',
     component: About,
     routes: [
-      { path: '/about/home',
+      { path: 'home',
         component: Home
       },
-      { path: '/about/contact',
+      { path: 'contact',
         component: Contact
       }
     ]
   },
   {
     path: '/contact',
-    component: Contact
+    component: withAuth(Contact)
   },
   {
     path: '/login',

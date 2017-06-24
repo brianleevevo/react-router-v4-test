@@ -5,7 +5,7 @@ import { StaticRouter } from 'react-router'
 import App from '../client/containers/App'
 
 createServer((req, res) => {
-  const context = {}
+  const context = {};
 
   const html = renderToString(
     <StaticRouter
@@ -14,7 +14,7 @@ createServer((req, res) => {
     >
       <App/>
     </StaticRouter>
-  )
+  );
 
   if (context.url) {
     res.writeHead(301, {
@@ -29,9 +29,11 @@ createServer((req, res) => {
           <title>Brian</title>
         </head>
         <body>
-          <div id="app">${html}</div>
+          ${html}
+          <script src="${process.NODE_ENV === 'development' ? 'http://localhost:8080/dist/main.bundle.js' : '/dist/main.bundle.js'}" />
         </body>
-    `)
-    res.end()
+      </html>
+    `);
+    res.end();
   }
-}).listen(3000)
+}).listen(3000);

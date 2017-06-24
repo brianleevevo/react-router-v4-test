@@ -27,8 +27,7 @@ const webpackConfig = {
                 [ 'es2015', { modules: false } ],
                 'es2017',
                 'stage-2'
-              ],
-              plugins: [ 'syntax-dynamic-import' ]
+              ]
             }
           }]
         },

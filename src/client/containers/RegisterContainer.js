@@ -28,7 +28,7 @@ class RegisterContainer extends Component {
     return (
       <div className="register-container">
         <div className="register-form-container">
-          <h1>REGISTER</h1>
+          <h1>Register</h1>
           <Form onSubmit={() => onSubmit(data)}>
             <FormGroup hasError={Boolean(validation.hasError && validation.errors.email)} errorMessage={validation.errors.email}>
               <TextBox id="email" type="email" placeholder="Email Address" autoComplete="off" value={data.email} onChange={email => onChange({ email })} />

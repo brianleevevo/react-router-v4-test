@@ -1,7 +1,33 @@
 {
-  "presets": [
-    "es2015",
-    "es2017",
-    "stage-2"
-  ]
+  "env": {
+    "browser": {
+      "presets": [
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ],
+        "es2017",
+        "stage-2",
+        "react"
+      ],
+    },
+    "node": {
+      "presets": [
+        [
+          "env", {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ],
+        "stage-2",
+        "react"
+      ],
+      "plugins": [
+        ["system-import-transformer", { "modules": "common" }]
+      ]
+    }
+  }
 }

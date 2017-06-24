@@ -1,8 +1,8 @@
 import Bundle from '../components/shared/Bundle';
-import loadHome from 'bundle-loader?lazy!../containers/HomeContainer';
+/*import loadHome from 'bundle-loader?lazy!../containers/HomeContainer';
 import loadAbout from 'bundle-loader?lazy!../containers/AboutContainer'
 import loadContact from 'bundle-loader?lazy!../containers/ContactContainer'
-import loadLogin from 'bundle-loader?lazy!../containers/LoginContainer';
+import loadLogin from 'bundle-loader?lazy!../containers/LoginContainer';*/
 import withAuth from 'components/shared/WithAuth';
 
 const loadBundle = load =>
